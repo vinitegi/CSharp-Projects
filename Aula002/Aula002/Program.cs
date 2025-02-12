@@ -6,7 +6,7 @@ namespace MyApp
     {
         static void Main(string[] args)
         {
-            byte n1 = 126;
+            byte n1 = 1;
 
             Console.WriteLine(n1);
         }
