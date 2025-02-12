@@ -14,12 +14,14 @@ namespace MyApp
             double n6 = 4.5;
 
             /*
-             * MUDANÇA TIPO DE VARIALVEL
+             * MUDANÇA DOS TIPO DE VARIALVEL
              */
 
             bool completo = false; //valor verdade, veradeiro ou falso (0 e 1)
             char caracter = 'a';
             string nome = "otegi";
+            object obj1 = "Charlie Brown"; //variaveis do tipo 'object' sao genericas, ou seja, podem assumir qualquer papel
+            object obj2 = 4.5f;
 
             Console.WriteLine(n1);
             Console.WriteLine(n2);
@@ -30,6 +32,8 @@ namespace MyApp
             Console.WriteLine(n5);
             Console.WriteLine(n6);
             Console.WriteLine(nome);
+            Console.WriteLine(obj1);
+            Console.WriteLine(obj2);
            
         }
     }
