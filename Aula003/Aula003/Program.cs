@@ -1,7 +1,11 @@
-﻿Console.WriteLine("Hello, World!");
+﻿Console.WriteLine("---------------------------------------------------------------");
 
-for (int i = 0; i < 5; i++)
-{
-    Console.WriteLine(i);
-}
+char genero = 'F';
+int idade = 32;
+double saldo = 10.325789;
+string nome = "maria";
 
+Console.WriteLine(genero);
+Console.WriteLine(idade);
+Console.WriteLine(saldo.ToString("F2"));
+Console.WriteLine(nome);
