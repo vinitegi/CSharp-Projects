@@ -15,12 +15,10 @@ y.A = float.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 y.B = float.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 y.C = float.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
-double p = (x.A + x.B + x.C) / 2;
-double areaX = Math.Sqrt(p * (p - x.A) * (p - x.B) * (p - x.C));
+double areaX = x.Area();
 Console.WriteLine($"A area do triangulo X: {areaX.ToString("F2", CultureInfo.InvariantCulture)}");
 
-p = (y.A + y.B + y.C) / 2;
-double areaY = Math.Sqrt(p * (p - y.A) * (p - y.B) * (p - y.C));
+double areaY = y.Area();
 Console.WriteLine($"A area do triangulo Y: {areaY.ToString("F2", CultureInfo.InvariantCulture)}");
 
 if (areaX > areaY)
