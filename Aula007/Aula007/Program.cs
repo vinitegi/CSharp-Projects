@@ -1,23 +1,26 @@
-﻿using System.Globalization;
+﻿using Aula007;
+using System.Globalization;
 
-float xA, xB, xC, yA, yB, yC;
+Triangulo x, y;
+x = new Triangulo();
+y = new Triangulo();
 
 Console.WriteLine("Digite as medidas do triangulo X");
-xA = float.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-xB = float.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-xC = float.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+x.A = float.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+x.B = float.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+x.C = float.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
 Console.WriteLine("Digite as medidas do triangulo Y");
-yA = float.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-yB = float.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-yC = float.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+y.A = float.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+y.B = float.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+y.C = float.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
-double p = (xA + xB + xC) / 2;
-double areaX = Math.Sqrt(p * (p - xA) * (p - xB) * (p - xC));
+double p = (x.A + x.B + x.C) / 2;
+double areaX = Math.Sqrt(p * (p - x.A) * (p - x.B) * (p - x.C));
 Console.WriteLine($"A area do triangulo X: {areaX.ToString("F2", CultureInfo.InvariantCulture)}");
 
-p = (yA + yB + yC) / 2;
-double areaY = Math.Sqrt(p * (p - yA) * (p - yB) * (p - yC));
+p = (y.A + y.B + y.C) / 2;
+double areaY = Math.Sqrt(p * (p - y.A) * (p - y.B) * (p - y.C));
 Console.WriteLine($"A area do triangulo Y: {areaY.ToString("F2", CultureInfo.InvariantCulture)}");
 
 if (areaX > areaY)
