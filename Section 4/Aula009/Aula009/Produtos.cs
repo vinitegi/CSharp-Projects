@@ -1,4 +1,6 @@
-﻿namespace Prod
+﻿using System.Globalization;
+
+namespace Prod
 {
     class Produtos
     {
@@ -11,9 +13,19 @@
             return (valor * qntd);
         }
 
+        public void AddProdutos(int quantidade)
+        {
+            qntd += quantidade;
+        }
+
         public override string ToString()
         {
-            return nome + ", R$ " + valor + ", " + qntd + " unidades em estoque";
+            return nome
+                + ", R$ "
+                + valor.ToString("F2", CultureInfo.InvariantCulture)
+                + ", "
+                + qntd + " unidades em estoque, Total: R$ "
+                + ValorTotalEstoque().ToString("F2", CultureInfo.InvariantCulture);
         }
     }
 }
