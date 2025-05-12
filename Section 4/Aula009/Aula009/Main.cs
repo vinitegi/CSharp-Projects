@@ -17,8 +17,15 @@ Console.WriteLine("Estoque: ");
 
 Console.WriteLine("Dados do produto: " + p);
 
-Console.WriteLine("Digite quantos produtos serão adicionado ao estoque:");
+Console.WriteLine("Digite quantos produtos serão adicionados ao estoque:");
     int novaQntd = int.Parse(Console.ReadLine());
     p.AddProdutos(novaQntd); //função criada na classe
+    Console.WriteLine("Dados do produto: " + p);
+
+Console.WriteLine("Digite quantos produtos serão adicionados ao estoque:");
+    novaQntd = int.Parse(Console.ReadLine());
+    p.RemoverProdutos(novaQntd);
+    Console.WriteLine("Dados do produto: " + p);
+
 
 Console.WriteLine("Dados atualizados: " + p);
