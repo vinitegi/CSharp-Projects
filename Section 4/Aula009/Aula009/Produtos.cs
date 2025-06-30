@@ -8,17 +8,17 @@ namespace Prod
         public double valor;
         public int qntd;
 
-        public double ValorTotalEstoque()
+        public double ValorTotalEstoque() //funcao
         {
             return (valor * qntd);
         }
 
-        public void AddProdutos(int quantidade)
+        public void AddProdutos(int quantidade) //funcao
         {
             qntd += quantidade;
         }
 
-        public void RemoverProdutos(int quantidade)
+        public void RemoverProdutos(int quantidade) //funcao
         {
             qntd -= quantidade;
         }
