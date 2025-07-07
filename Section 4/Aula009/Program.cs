@@ -6,13 +6,13 @@ Produto p = new Produto();
 
 Console.WriteLine("Entre os dados do produto: ");
 
-Console.WriteLine("Nome: ");
+Console.Write("Nome: ");
 p.Nome = Console.ReadLine();
 
-Console.WriteLine("Valor: ");
+Console.Write("Valor: ");
 p.Valor = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
-Console.WriteLine("Quantidade no estoque: ");
+Console.Write("Quantidade no estoque: ");
 p.Qntd = int.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
 Console.WriteLine("Dados do produto: " + p);
