@@ -18,6 +18,12 @@ Produtos p2 = new Produtos(nome, valor);
 
 Produtos p3 = new Produtos();
 
+Produtos p4 = new Produtos
+{
+    Nome = "TV",
+    Valor = 500.00,
+    Quantidade = 20
+};
 
 Console.WriteLine();
 
