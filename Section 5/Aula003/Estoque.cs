@@ -20,6 +20,7 @@ namespace SistemaEstoque
             _valor = valor;
             _quantidade = quantidade;
         }
+        //===================================================================================
 
         // Encapsulamento:
         // Técnica da programação orientada a objetos que protege os dados de uma classe.
@@ -40,6 +41,18 @@ namespace SistemaEstoque
                 _nome = nome;
             }
         }
+
+        public double GetValor()
+        {
+            return _valor;
+        }
+
+        public int GetQuantidade()
+        {
+            return _quantidade;
+        }
+
+        //===================================================================================
 
         public double ValorTotal()
         {

@@ -7,6 +7,9 @@ Console.WriteLine(p.GetNome());
 p.SetNome("TV 4K");
 Console.WriteLine(p.GetNome());
 
+Console.WriteLine(p.GetValor());
+Console.WriteLine(p.GetQuantidade());
+
 
 Console.ReadKey();
 
