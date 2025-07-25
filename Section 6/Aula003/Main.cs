@@ -16,4 +16,4 @@ for (int i = 0; i < n; i++)
     soma += altura[i];
 }
 
-Console.WriteLine("A media eh de " +  (soma / n).ToString("F2", CultureInfo.InvariantCulture) + " metros");
+Console.WriteLine("Média = " +  (soma / n).ToString("F2", CultureInfo.InvariantCulture) + " m");
